@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="4dp"
+    android:id="@+id/rlRecordRecycler">
+
+    <TextView
+        android:id="@+id/recyclerViewItemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/recyclerViewItemEditButton"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:text="title"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="8dp"/>
+    <Button
+        android:id="@+id/recyclerViewItemEditButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@+id/recyclerViewItemDeleteButton"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:background="@drawable/edit_icon"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"/>
+    <Button
+        android:id="@+id/recyclerViewItemDeleteButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:background="@drawable/delete_icon"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="8dp"/>
+
+</RelativeLayout>
